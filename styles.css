@@ -272,6 +272,11 @@ h3 {
   background: rgba(255, 255, 255, 0.22);
 }
 
+.price-band.single-price {
+  width: min(520px, 100%);
+  grid-template-columns: 1fr;
+}
+
 .price-band div {
   min-height: 128px;
   padding: 22px;
@@ -494,6 +499,11 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+}
+
+.pricing-grid.single-pricing {
+  grid-template-columns: minmax(0, 620px);
+  justify-content: center;
 }
 
 .price-card {
