@@ -199,6 +199,10 @@ h3 {
   font-weight: 900;
 }
 
+.hero h1 .headline-long {
+  font-size: 0.86em;
+}
+
 .hero-lead {
   max-width: 660px;
   margin: 24px 0 0;
@@ -206,6 +210,10 @@ h3 {
   font-size: 18px;
   font-weight: 500;
   overflow-wrap: anywhere;
+}
+
+.hero-lead span {
+  display: block;
 }
 
 .hero-actions,
@@ -985,6 +993,10 @@ h3 {
     font-size: 42px;
   }
 
+  .hero h1 .headline-long {
+    font-size: 0.78em;
+  }
+
   .hero-lead {
     font-size: 16px;
   }
@@ -1099,6 +1111,10 @@ h3 {
 
   .hero h1 {
     font-size: 34px;
+  }
+
+  .hero h1 .headline-long {
+    font-size: 0.72em;
   }
 
   .hero-lead {
