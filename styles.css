@@ -339,6 +339,7 @@ h3 {
 }
 
 .hero-points li {
+  min-width: 0;
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 6px;
@@ -640,6 +641,72 @@ h3 {
   color: var(--muted);
   line-height: 1.8;
   font-weight: 500;
+}
+
+.comparison-section {
+  background: #07111d;
+  color: var(--white);
+}
+
+.comparison-section .section-heading p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.comparison-table {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 190px repeat(2, minmax(0, 1fr));
+}
+
+.comparison-row + .comparison-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.comparison-row > div {
+  min-height: 86px;
+  padding: 20px;
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  font-weight: 800;
+}
+
+.comparison-row > div:last-child {
+  border-right: 0;
+}
+
+.comparison-head > div {
+  min-height: 58px;
+  color: var(--lime);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.comparison-row strong {
+  color: var(--lime);
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.comparison-row span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.comparison-note {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .spec-section {
@@ -1011,6 +1078,16 @@ h3 {
     font-size: 16px;
   }
 
+  .hero-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .hero-points li {
+    text-align: center;
+  }
+
   .price-band,
   .pricing-grid,
   .support-grid,
@@ -1045,6 +1122,19 @@ h3 {
 
   .spec-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row > div {
+    min-height: auto;
+    border-right: 0;
+  }
+
+  .comparison-row > div + div {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .power-callout {
@@ -1102,6 +1192,16 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .site-header {
+    padding: 0 16px;
+  }
+
+  .nav-cta {
+    min-height: 36px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
   .keep {
     white-space: normal;
   }
@@ -1161,9 +1261,16 @@ h3 {
     font-size: 28px;
   }
 
+  .hero-points {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero-points li {
-    flex: 1 1 calc(50% - 8px);
     text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    line-height: 1.35;
   }
 
   .strip-grid p {
