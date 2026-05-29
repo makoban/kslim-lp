@@ -270,6 +270,18 @@ h3 {
   background: rgba(5, 8, 12, 0.78);
 }
 
+.campaign-label {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 12px;
+  padding: 6px 9px;
+  color: var(--ink);
+  background: var(--lime);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .model {
   display: inline-flex;
   align-items: center;
@@ -282,9 +294,17 @@ h3 {
   font-weight: 900;
 }
 
+.price-band del {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 15px;
+  font-weight: 800;
+}
+
 .price-band strong {
   display: block;
-  margin-top: 10px;
+  margin-top: 6px;
   font-size: 34px;
   line-height: 1;
 }
@@ -507,6 +527,18 @@ h3 {
   line-height: 1;
 }
 
+.regular-price {
+  width: fit-content;
+  margin: 18px 0 -8px;
+  padding: 7px 10px;
+  color: var(--muted);
+  background: #eef3f8;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: line-through;
+}
+
 .price strong {
   font-size: 58px;
   font-weight: 900;
@@ -554,6 +586,42 @@ h3 {
 .fine-print {
   margin: 22px 0 0;
   font-size: 13px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.support-grid article {
+  min-height: 210px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 36px rgba(19, 28, 42, 0.06);
+}
+
+.support-grid span {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.support-grid h3 {
+  margin: 8px 0 10px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+.support-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 500;
 }
 
 .spec-section {
@@ -923,6 +991,7 @@ h3 {
 
   .price-band,
   .pricing-grid,
+  .support-grid,
   .intro-grid,
   .visual-grid,
   .proof-grid,
@@ -1081,6 +1150,7 @@ h3 {
   }
 
   .price-card,
+  .support-grid article,
   .intro-items article,
   .flow-grid article,
   .faq-list details {
