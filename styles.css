@@ -746,6 +746,77 @@ h3 {
   line-height: 1.7;
 }
 
+.color-showcase {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 28px;
+  align-items: center;
+  margin: 0 0 22px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f7fafc;
+}
+
+.color-showcase figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #e9eef4;
+}
+
+.color-showcase img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.color-showcase h3 {
+  font-size: 30px;
+}
+
+.color-showcase p:not(.section-kicker) {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.color-swatches span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.swatch.black {
+  background: #111922;
+}
+
+.swatch.white {
+  background: #fff;
+  border: 1px solid rgba(17, 25, 34, 0.22);
+}
+
 .spec-grid div {
   min-height: 132px;
   padding: 20px;
@@ -1142,6 +1213,14 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .color-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .color-showcase img {
+    height: 240px;
+  }
+
   .spec-grid div:nth-child(2n) {
     border-right: 0;
   }
@@ -1289,6 +1368,18 @@ h3 {
   .flow-grid article,
   .faq-list details {
     padding: 22px;
+  }
+
+  .color-showcase {
+    padding: 18px;
+  }
+
+  .color-showcase img {
+    height: 210px;
+  }
+
+  .color-showcase h3 {
+    font-size: 25px;
   }
 
   .spec-grid {
