@@ -1,0 +1,7 @@
+.playwright-mcp/
+qa/
+output/
+tmp/
+brochure.html
+brochure.css
+assets/brochure/
